@@ -44,7 +44,4 @@ resource "hcloud_server" "kube-worker" {
     ipv6_enabled = false
   }
   
-  depends_on = [
-    hcloud_network_subnet.hc_private_subnet
-  ]
 }

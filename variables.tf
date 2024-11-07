@@ -1,5 +1,10 @@
 variable "hcloud_token" {
-  # default = <your-api-token>
+default = "qC3uu74sGrjw7o2zEVDLm28XTL60rGxNbawt4b5E85dqrEDRCj2MFANYSYX30EJp"
+}
+
+variable "local_kubeconfig_path" {
+  type    = string
+  default = "/root/code/setup-k8s-cluster-hetzner"
 }
 
 variable "location" {
