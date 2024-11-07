@@ -1,5 +1,5 @@
 variable "hcloud_token" {
-default = "qC3uu74sGrjw7o2zEVDLm28XTL60rGxNbawt4b5E85dqrEDRCj2MFANYSYX30EJp"
+default = ""
 }
 
 variable "local_kubeconfig_path" {
