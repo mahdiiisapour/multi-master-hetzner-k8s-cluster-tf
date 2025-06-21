@@ -1,10 +1,10 @@
 variable "hcloud_token" {
-default = ""
+default = "jg7M0MxG5y3nufrVYuA7N4PkvVXFqD8TtyLW3sBBfgjCGqpqiONdMQDrQEdYTXtI"
 }
 
 variable "local_kubeconfig_path" {
   type    = string
-  default = "/root/code/setup-k8s-cluster-hetzner"
+  default = "/root/code/multi-master-hetzner-k8s-cluster"
 }
 
 variable "location" {
@@ -56,31 +56,31 @@ variable "cluster_name" {
 }
 
 variable "kubernetes_package_version" {
-  default = "1.31.2-1.1"
+  default = "1.32.0-1.1"
 }
 
 variable "kubernetes_version" {
-  default = "1.31.1"
+  default = "1.32.0"
 }
 
 variable "k8s_repo_version" {
-  default = "1.31"
+  default = "1.32"
 }
 
-variable "containerd_version" {
-  default = "1.7.12-0ubuntu4.1"
-}
+# variable "containerd_version" {
+#   default = "1.7.12-0ubuntu4.1"
+# }
 
 variable "keepalived_version" {
   default = "1:2.2.8-1build2"
 }
 
 variable "cilium_version" {
-  default = "1.16.3"
+  default = "1.17.4"
 }
 
 variable "ingress_nginx_version" {
-  default = "4.11.3"
+  default = "4.12.3"
 }
 
 variable "helm_version" {

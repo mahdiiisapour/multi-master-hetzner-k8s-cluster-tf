@@ -147,11 +147,12 @@
 
     - name: Install containerd package
       become: true
-      when: inventory_hostname in ((groups['master_servers'] + groups['worker_servers']) | unique )
+      when: inventory_hostname in groups['master_servers'] or inventory_hostname in groups['worker_servers']
       ansible.builtin.apt:
         state: present
-        name: 
-          - containerd={{ containerd_version }}
+        name:
+          - containerd
+
 
     - name: initiate a default containerd config
       become: true
